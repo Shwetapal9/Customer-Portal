@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+}
+
+.customer-list {
+  width: 30%;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+  height: 100vh;
+  text-align: center;
+}
+
+.customer-card {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.customer-card.selected {
+  background-color: #f0f0f0;
+}
+
+.customer-details {
+  width: 70%;
+  padding: 0px 20px;
+  background-color: #f0f0f0;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-left: 60px;
+}
+
+.photo-grid img {
+  width: 200px;
+  height: 120px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
